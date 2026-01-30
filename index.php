@@ -38,7 +38,7 @@ $counter = 0;
 
 echo "<ul>";
 while ($counter < count($countries2)) {
-    echo "<li>" . $countries2[$i] . "</li>";
+    echo "<li>" . $countries2[$counter] . "</li>";
     $counter++;
 }
 
