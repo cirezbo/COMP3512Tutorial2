@@ -92,15 +92,31 @@ $countries4 = [
   ["ISO"=>"AT","name"=>"Austria","continent"=>"EU"] 
 ];
 
-echo "<ul>";
-foreach( $countries4 as $country) {
-    echo "<li>" . $country['name'] . "</li>";
+function printCountries($countries4){
+
+    echo "<ul>";
+    foreach ($countries4 as $country) {
+
+        if ($country['continent'] == 'EU') {
+            echo "<li><strong>" . $country['name'] . "</strong></li>";
+        } else {
+            echo "<li>" . $country['name'] . "</li>";
+        }
+
+
+    }
+    echo "</ul>";
+
 }
-echo "</ul>";
 
 
 
-
+//Exercise 6
+$countries5 = [ 
+  "CA" => ["name"=>"Canada", "capital"=>"Ottawa"], 
+  "FR" => ["name"=>"France", "capital"=>"Paris"], 
+  "TR" => ["name"=>"Turkey", "capital"=>"Ankara"] 
+];
 
 
 
