@@ -109,6 +109,7 @@ function printCountries($countries4){
 
 }
 
+echo printCountries($countries4); //just to see it in browser
 
 
 //Exercise 6
